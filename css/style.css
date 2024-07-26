@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,7 +19,7 @@ body {
 
 header {
   width: 100%;
-  background: var(--light, #FFF9EA);
+  background: var(--light, #fff9ea);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -100,4 +100,41 @@ p {
 
 .how-it-works .feature {
   width: 30%;
+}
+
+/* ============================= */
+
+.yellow__text {
+  color: #ffcb45;
+  text-align: center;
+  /* title2 */
+  font-family: "Readex Pro";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.serve {
+  color: var(--black, #1d1d1d);
+  text-align: center;
+
+  /* Header */
+  font-family: "Readex Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.product {
+  color: var(--TEXT-LIGHT, rgba(29, 29, 29, 0.7));
+  text-align: center;
+
+  /* title2 */
+  font-family: "Readex Pro";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
