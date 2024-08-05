@@ -59,12 +59,45 @@ header {
   text-decoration: underline;
 }
 
+/* Стили для иконок */
+.icons {
+  display: flex;
+  align-items: center;
+}
+
 .icons a {
   margin-left: 15px;
 }
 
 .icons img {
   width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+/* Стили для кнопки Sign in */
+.sign-in-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffcb45; /* Жёлтый фон */
+  color: #000; /* Чёрный текст */
+  padding: 12px 24px;
+  border-radius: 50px; /* Скругленные края */
+  text-decoration: none; /* Убирает подчеркивание */
+  font-size: 18px; /* Размер шрифта */
+  height: 38.133px; /* Высота кнопки */
+  gap: 16px; /* Расстояние между иконкой и текстом */
+}
+
+.sign-in-btn img {
+  width: 24px; /* Ширина иконки */
+  height: 24px; /* Высота иконки */
+  flex-shrink: 0;
+}
+
+.sign-in-btn:hover {
+  background-color: #e69c00; /* Цвет фона при наведении */
 }
 
 /* Header content styling */
@@ -108,30 +141,6 @@ header {
 
 .header__food {
   max-width: 500px; /* Ограничение максимальной ширины изображения */
-}
-
-/* Decorative elements styling */
-.decorative-elements .circle {
-  width: 50px;
-  height: 50px;
-  background-color: #ffb703;
-  border-radius: 50%;
-  position: absolute;
-}
-
-.circle-1 {
-  top: 20%;
-  right: 10%;
-}
-
-.circle-2 {
-  top: 40%;
-  right: 5%;
-}
-
-.circle-3 {
-  top: 60%;
-  left: 20%;
 }
 
 .wave {
@@ -395,27 +404,4 @@ footer {
 
 .footer-bottom p {
   font-size: 14px;
-}
-
-.footer-decorative-elements .circle {
-  width: 50px;
-  height: 50px;
-  background-color: #ffb703;
-  border-radius: 50%;
-  position: absolute;
-}
-
-.footer-decorative-elements .circle-1 {
-  bottom: 20px;
-  right: 20px;
-}
-
-.footer-decorative-elements .circle-2 {
-  bottom: 50px;
-  right: 50px;
-}
-
-.footer-decorative-elements .circle-3 {
-  bottom: 80px;
-  right: 80px;
 }
