@@ -123,39 +123,39 @@ header {
   margin-bottom: 20px;
 }
 
+/* Стили для кнопки Get started */
 .get__started {
-  background-color: #ffb703;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-  border-radius: 5px;
-  display: flex;
+  display: inline-flex; /* inline-flex, чтобы кнопка не растягивалась */
   align-items: center;
+  justify-content: center;
+  background-color: #ffcb45; /* Жёлтый фон */
+  color: #000; /* Чёрный текст */
+  padding: 12px 24px;
+  border-radius: 50px; /* Скругленные края */
+  text-decoration: none; /* Убирает подчеркивание */
+  font-size: 18px; /* Размер шрифта */
+  gap: 16px; /* Расстояние между иконкой и текстом */
+  width: auto; /* Автоматическая ширина */
 }
 
 .get__started img {
-  margin-right: 10px;
+  width: 24px; /* Ширина иконки */
+  height: 24px; /* Высота иконки */
+}
+
+.get__started:hover {
+  background-color: #e69c00; /* Цвет фона при наведении */
 }
 
 .header__food {
   max-width: 500px; /* Ограничение максимальной ширины изображения */
 }
 
-.wave {
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 150px;
-  height: 50px;
-  background-image: url("./img/header/wave.png"); /* Волнистая линия */
-  background-size: cover;
-}
+
 
 /* How it works section styling */
 .how-it-works {
-  background-color: #fff7e6;
+  background-color: #ffffff;
   padding: 50px 0;
   text-align: center;
 }
@@ -207,6 +207,7 @@ header {
 .menu {
   padding: 50px 0;
   text-align: center;
+  background-color: #fff;
 }
 
 .menu h2 {
@@ -248,7 +249,7 @@ header {
 
 .menu-item span {
   font-size: 18px;
-  color: #ffb703;
+  color: #000000;
   display: block;
   margin-top: 5px;
 }
@@ -265,7 +266,7 @@ header {
 
 /* Testimonials section styling */
 .testimonials {
-  background-color: #fff7e6;
+  background-color: #ffffff;
   padding: 50px 0;
   text-align: center;
 }
@@ -285,7 +286,7 @@ header {
   width: 45%;
   margin: 0 20px;
   text-align: center;
-  background-color: #fff;
+  background: #F1F1F1;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
