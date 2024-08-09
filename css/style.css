@@ -151,8 +151,6 @@ header {
   max-width: 500px; /* Ограничение максимальной ширины изображения */
 }
 
-
-
 /* How it works section styling */
 .how-it-works {
   background-color: #ffffff;
@@ -286,7 +284,7 @@ header {
   width: 45%;
   margin: 0 20px;
   text-align: center;
-  background: #F1F1F1;
+  background: #f1f1f1;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
