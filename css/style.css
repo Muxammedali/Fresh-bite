@@ -275,11 +275,15 @@ header {
   text-align: center; /* Центрирование текста */
 }
 
+/* Стили для цены */
 .menu-item span {
   font-size: 18px;
   color: #000000;
   display: block;
   margin-top: 5px;
+  position: absolute;
+  bottom: 10px;
+  left: 20px; /* Отступ слева */
 }
 
 /* Styles for heart icon animation */
