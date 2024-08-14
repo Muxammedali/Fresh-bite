@@ -457,9 +457,44 @@ header {
 
 /* Membership section styling */
 .membership {
+  position: relative; /* Позволяет дочерним элементам позиционироваться относительно этого контейнера */
   padding: 50px 0;
   text-align: center;
-  background-color: #fff;
+  overflow: hidden; /* Обрезает содержимое, выходящее за границы */
+}
+
+.membership-bg {
+  position: relative;
+  width: 100%;
+  max-width: 1180px;
+  height: 332px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.71) 0%,
+      rgba(0, 0, 0, 0.71) 100%
+    ),
+    url("/img/membership/membership1.jpeg") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.membership-bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Обрезает изображение, чтобы оно покрывало контейнер */
+  opacity: 0; /* Скрывает изображение, если оно используется только для фона */
+}
+
+.membership-content {
+  position: relative;
+  z-index: 1; /* Помещает контент выше фонового изображения */
+  color: #fff; /* Цвет текста на фоне */
 }
 
 .membership h2 {
@@ -467,7 +502,7 @@ header {
   margin-bottom: 20px;
 }
 
-.membership .sign-up {
+.sign-up {
   background-color: #ffb703;
   color: #fff;
   padding: 10px 20px;
