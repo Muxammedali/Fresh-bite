@@ -333,7 +333,7 @@ header {
   font-size: 18px;
   border-radius: 5px;
   border-radius: 50px;
-background: var(--PRIMARY, #FFCB45);
+  background: var(--PRIMARY, #ffcb45);
 }
 
 .more-menu:hover {
@@ -528,10 +528,9 @@ background: var(--PRIMARY, #FFCB45);
   box-sizing: border-box; /* Включает паддинг в ширину и высоту кнопки */
 }
 
-.sign-up:hover{
+.sign-up:hover {
   background-color: #e69c00; /* Цвет фона при наведении */
 }
-
 
 /* Footer section styling */
 footer {
@@ -630,7 +629,7 @@ footer {
 .line {
   width: 1180px;
   height: 1px;
-  background: rgba(29, 29, 29, 0.50);
+  background: rgba(29, 29, 29, 0.5);
   margin-bottom: 46px; /* Настройте отступ по вашему усмотрению */
 }
 
