@@ -111,6 +111,7 @@ header {
   font-size: 48px;
   color: #333;
   margin-bottom: 10px;
+  max-width: 480px;
 }
 
 .header__big__text .yellow__text {
@@ -121,6 +122,7 @@ header {
   font-size: 18px;
   color: #555;
   margin-bottom: 20px;
+  width: 370px;
 }
 
 /* Стили для кнопки Get started */
@@ -230,15 +232,16 @@ header {
 
 .menu p {
   font-size: 18px;
-  margin-bottom: 40px;
   width: 518px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .menu-items {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 71px;
 }
 
 /* Позиционирование иконки в .menu-item */
@@ -323,12 +326,18 @@ header {
 
 .more-menu {
   background-color: #ffb703;
-  color: #fff;
+  color: #000; /* Чёрный текст */
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   font-size: 18px;
   border-radius: 5px;
+  border-radius: 50px;
+background: var(--PRIMARY, #FFCB45);
+}
+
+.more-menu:hover {
+  background-color: #e69c00; /* Цвет фона при наведении */
 }
 
 /* Testimonials section styling */
@@ -347,6 +356,7 @@ header {
 .food-image {
   flex: 0 0 30%; /* Adjust width of the food image container */
   padding-right: 20px; /* Space between image and testimonials */
+  margin-right: 101px;
 }
 
 .food-image img {
@@ -363,7 +373,6 @@ header {
 
 .title-above {
   color: #ffcb45;
-  text-align: center;
   font-family: "Readex Pro";
   font-size: 22px;
   font-style: normal;
@@ -373,15 +382,13 @@ header {
 }
 
 .main-title {
-  width: 481px;
+  max-width: 445px;
   color: #1d1d1d;
   font-family: "Readex Pro";
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin: 0 auto; /* Center the title */
-  text-align: center;
   margin-bottom: 40px; /* Distance between title and carousel */
 }
 
@@ -500,17 +507,31 @@ header {
 .membership h2 {
   font-size: 24px;
   margin-bottom: 20px;
+  max-width: 393px;
 }
 
 .sign-up {
-  background-color: #ffb703;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffcb45; /* Жёлтый фон */
+  color: #000; /* Чёрный текст */
+  padding: 12px 24px;
+  border-radius: 50px; /* Скругленные края */
+  text-decoration: none; /* Убирает подчеркивание */
+  font-size: 18px; /* Размер шрифта */
+  height: 38px; /* Высота кнопки */
+  width: 194px; /* Ширина кнопки */
+  margin: 0 auto; /* Центрирование кнопки */
+  gap: 8px; /* Расстояние между иконкой и текстом */
+  position: relative; /* Позволяет использовать z-index для потомков */
+  box-sizing: border-box; /* Включает паддинг в ширину и высоту кнопки */
 }
+
+.sign-up:hover{
+  background-color: #e69c00; /* Цвет фона при наведении */
+}
+
 
 /* Footer section styling */
 footer {
