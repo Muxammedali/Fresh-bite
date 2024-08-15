@@ -541,14 +541,35 @@ footer {
 
 .social-icons {
   display: flex;
+  margin-top: 32px;
+  margin-bottom: 91px;
 }
 
-.social-icons a {
+.social-icon {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0px 4px 12px 0px rgba(29, 29, 29, 0.15);
+  transition: background-color 0.3s, fill 0.3s;
   margin-right: 10px;
 }
 
-.social-icons img {
+.social-icon svg {
   width: 24px;
+  height: 24px;
+  fill: #333; /* Черный цвет для иконок */
+}
+
+.social-icon:hover {
+  background-color: #ffb703;
+}
+
+.social-icon:hover svg {
+  fill: #fff; /* Белый цвет для иконок при наведении */
 }
 
 .footer-links {
@@ -585,11 +606,17 @@ footer {
   color: #ffb703;
 }
 
+.line {
+  width: 1180px;
+  height: 1px;
+  background: rgba(29, 29, 29, 0.50);
+  margin-bottom: 46px; /* Настройте отступ по вашему усмотрению */
+}
+
 /* Copyright styling */
 .footer-bottom {
   text-align: center;
   padding: 10px 0;
-  background-color: #fff;
   font-size: 14px;
   color: #333;
 }
