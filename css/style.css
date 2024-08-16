@@ -7,10 +7,12 @@
 
 /* Body styling */
 body {
-  font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #fdf6e4; /* Цвет фона */
+  font-family: "Readex Pro";
+  font-size: 22px;
+  font-style: normal;
 }
 
 /* Container for centering content */
@@ -37,6 +39,7 @@ header {
 
 .navigation .logo img {
   max-width: 150px; /* Ограничение максимальной ширины логотипа */
+  margin-right: 131px;
 }
 
 .navigation__menu {
@@ -52,6 +55,7 @@ header {
   text-decoration: none;
   color: #333;
   font-size: 18px;
+  margin-right: 37px;
 }
 
 .navigation__menu a:hover {
@@ -131,13 +135,18 @@ header {
   align-items: center;
   justify-content: center;
   background-color: #ffcb45; /* Жёлтый фон */
-  color: #000; /* Чёрный текст */
   padding: 12px 24px;
   border-radius: 50px; /* Скругленные края */
   text-decoration: none; /* Убирает подчеркивание */
   font-size: 18px; /* Размер шрифта */
   gap: 16px; /* Расстояние между иконкой и текстом */
   width: auto; /* Автоматическая ширина */
+  color: var(--black, #1d1d1d);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .get__started img {
@@ -164,21 +173,35 @@ header {
   color: #ffb703;
   font-size: 36px;
   margin-bottom: 10px;
+  font-family: "Readex Pro";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .how-it-works .serve {
   font-size: 24px;
   margin-bottom: 10px;
+  font-family: "Readex Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .how-it-works .product {
-  font-size: 18px;
   margin-bottom: 40px;
   max-width: 600px; /* Ограничение максимальной ширины */
   width: 100%; /* Заполнение всей доступной ширины */
   text-align: center; /* Центрирование текста */
   margin: 0 auto; /* Центрирование блока */
   margin-bottom: 32px;
+  font-family: "Readex Pro";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .features {
@@ -188,7 +211,7 @@ header {
 }
 
 .feature {
-  width: 30%;
+  max-width: 234px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -196,16 +219,25 @@ header {
 .feature img {
   max-width: 100px;
   margin-bottom: 10px;
-}
+  margin-top: 32px;
+} 
 
 .feature h3 {
-  font-size: 20px;
   margin-bottom: 5px;
+  color: var(--black, #1d1d1d);
+  font-family: "Readex Pro";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
-.feature p {
-  font-size: 16px;
-  color: #555;
+.feature p {                              
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  
 }
 
 /* Menu section styling */
