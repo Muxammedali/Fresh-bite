@@ -399,6 +399,7 @@ header {
   font-size: 18px;
   border-radius: 5px;
   border-radius: 50px;
+  text-decoration: none;
   background: var(--PRIMARY, #ffcb45);
 }
 
