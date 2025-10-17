@@ -3,59 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Fresh Bite</title>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <!-- Header Section -->
-    <header>
+    <header id="hero">
       <div class="container">
         <!-- Navigation Bar -->
-        <div class="navigation">
-          <a href="https://github.com/Muxammedali" target="_blank" class="logo">
+        <nav class="navigation" aria-label="Primary navigation">
+          <a
+            href="#hero"
+            class="logo"
+            aria-label="Fresh Bite home"
+          >
             <img src="./img/header/logo.png" alt="Soup" />
           </a>
           <ul class="navigation__menu">
             <li>
-              <a href="https://github.com/Muxammedali" target="_blank">Home</a>
+              <a href="#hero">Home</a>
             </li>
             <li>
-              <a href="https://github.com/Muxammedali" target="_blank">Menu</a>
+              <a href="#menu">Menu</a>
             </li>
             <li>
-              <a href="https://github.com/Muxammedali" target="_blank"
-                >How it works</a
-              >
+              <a href="#how-it-works">How it works</a>
             </li>
             <li>
-              <a href="https://github.com/Muxammedali" target="_blank">About</a>
+              <a href="#membership">About</a>
             </li>
             <li>
-              <a href="https://github.com/Muxammedali" target="_blank"
-                >Contact</a
-              >
+              <a href="#contact">Contact</a>
             </li>
           </ul>
 
           <div class="icons">
-            <a href="https://github.com/Muxammedali" target="_blank"
+            <a
+              href="https://github.com/Muxammedali"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Search"
               ><span class="loupe"
-                ><img src="./img/header/loupe.png" alt="loupe" /></span
+                ><img src="./img/header/loupe.png" alt="Search" /></span
             ></a>
-            <a href="https://github.com/Muxammedali" target="_blank"
+            <a
+              href="https://github.com/Muxammedali"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View cart"
               ><span class="basket"
-                ><img src="./img/header/basket.png" alt="basket" /></span
+                ><img src="./img/header/basket.png" alt="Basket" /></span
             ></a>
             <a
               href="https://github.com/Muxammedali"
               target="_blank"
               class="sign-in-btn"
+              rel="noopener noreferrer"
             >
               <img src="./img/header/door-arrow.svg" alt="Door with arrow" />
               Sign in
             </a>
           </div>
-        </div>
+        </nav>
         <!-- nav end -->
         <!-- Header Content -->
         <div class="header-content">
@@ -68,18 +84,14 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
               aliquam, purus sit amet
             </p>
-            <a
-              href="https://github.com/Muxammedali"
-              target="_blank"
-              class="get__started"
-            >
+            <a href="#menu" class="get__started">
               <img src="./img/header/door-arrow.svg" alt="Door with arrow" />
               Get started
             </a>
           </div>
           <img
             src="./img/header/headerFood.png"
-            alt="header image"
+            alt="Fresh Bite delivery hero illustration"
             class="header__food"
           />
         </div>
@@ -87,11 +99,16 @@
       </div>
     </header>
 
+    <main id="main-content">
     <!-- How It Works Section -->
-    <section class="how-it-works">
+    <section
+      id="how-it-works"
+      class="how-it-works"
+      aria-labelledby="how-it-works-title"
+    >
       <div class="container">
-        <h1 class="yellow__text">How it works</h1>
-        <h2 class="serve">What We Serve</h2>
+        <p class="section-kicker yellow__text">How it works</p>
+        <h2 class="serve" id="how-it-works-title">What We Serve</h2>
         <p class="product">
           Product Quality Is Our Priority, And Always Guarantees Halal And
           Safety Until It Is In Your Hands.
@@ -121,10 +138,10 @@
     </section>
 
     <!-- Menu Section -->
-    <section class="menu">
+    <section id="menu" class="menu" aria-labelledby="menu-title">
       <div class="container">
-        <h1 class="yellow__text">Our menu</h1>
-        <h2>Our Popular Menu</h2>
+        <p class="section-kicker yellow__text">Our menu</p>
+        <h2 id="menu-title">Our Popular Menu</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam
         </p>
@@ -150,7 +167,12 @@
               <p>lorem ipsum</p>
               <span>&dollar; 20.2</span>
             </div>
-            <div class="heart-icon" id="heartIcon">
+            <button
+              class="heart-icon"
+              type="button"
+              aria-pressed="false"
+              aria-label="Toggle favorite for Mie Ramen"
+            >
               <svg
                 class="heart-svg grey-heart"
                 xmlns="http://www.w3.org/2000/svg"
@@ -178,7 +200,7 @@
                   fill="#FFCB45"
                 />
               </svg>
-            </div>
+            </button>
           </div>
 
           <div class="menu-item">
@@ -201,7 +223,12 @@
               <p>lorem ipsum</p>
               <span>&dollar; 20.2</span>
             </div>
-            <div class="heart-icon" id="heartIcon">
+            <button
+              class="heart-icon"
+              type="button"
+              aria-pressed="false"
+              aria-label="Toggle favorite for Salad Tahu"
+            >
               <svg
                 class="heart-svg grey-heart"
                 xmlns="http://www.w3.org/2000/svg"
@@ -229,7 +256,7 @@
                   fill="#FFCB45"
                 />
               </svg>
-            </div>
+            </button>
           </div>
 
           <div class="menu-item">
@@ -252,7 +279,12 @@
               <p>lorem ipsum</p>
               <span>&dollar; 20.2</span>
             </div>
-            <div class="heart-icon" id="heartIcon">
+            <button
+              class="heart-icon"
+              type="button"
+              aria-pressed="false"
+              aria-label="Toggle favorite for Roti Bakar"
+            >
               <svg
                 class="heart-svg grey-heart"
                 xmlns="http://www.w3.org/2000/svg"
@@ -280,7 +312,7 @@
                   fill="#FFCB45"
                 />
               </svg>
-            </div>
+            </button>
           </div>
 
           <div class="menu-item">
@@ -303,7 +335,12 @@
               <p>lorem ipsum</p>
               <span>&dollar; 20.2</span>
             </div>
-            <div class="heart-icon" id="heartIcon">
+            <button
+              class="heart-icon"
+              type="button"
+              aria-pressed="false"
+              aria-label="Toggle favorite for Spaghetti"
+            >
               <svg
                 class="heart-svg grey-heart"
                 xmlns="http://www.w3.org/2000/svg"
@@ -331,20 +368,19 @@
                   fill="#FFCB45"
                 />
               </svg>
-            </div>
+            </button>
           </div>
         </div>
-        <a
-          href="https://github.com/Muxammedali"
-          target="_blank"
-          class="more-menu"
-          >More Menu</a
-        >
+        <a href="#menu" class="more-menu">More Menu</a>
       </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials">
+    <section
+      id="testimonials"
+      class="testimonials"
+      aria-labelledby="testimonials-title"
+    >
       <div class="container">
         <!-- Content Wrapper -->
         <div class="content-wrapper">
@@ -355,12 +391,21 @@
           <!-- Testimonials Content -->
           <div class="testimonials-content">
             <!-- Title Above -->
-            <h1 class="title-above">What They Say</h1>
+            <p class="section-kicker title-above">What They Say</p>
             <!-- Main Title -->
-            <h2 class="main-title">What Our Customers Say About Us</h2>
+            <h2 class="main-title" id="testimonials-title">
+              What Our Customers Say About Us
+            </h2>
             <!-- Testimonials Carousel -->
-            <div class="testimonials-carousel" id="carousel">
-              <div class="testimonial">
+            <div
+              class="testimonials-carousel"
+              id="carousel"
+              role="list"
+              aria-live="polite"
+              data-carousel
+              tabindex="0"
+            >
+              <div class="testimonial" role="group" aria-label="Naura Silvana">
                 <img src="./img/customers/customer1.png" alt="Naura Silvana" />
                 <p>
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
@@ -369,7 +414,7 @@
                 <h3>Naura Silvana</h3>
                 <span>5 Stars</span>
               </div>
-              <div class="testimonial">
+              <div class="testimonial" role="group" aria-label="Azura">
                 <img src="./img/customers/customer2.png" alt="Azura" />
                 <p>
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
@@ -378,7 +423,7 @@
                 <h3>Azura</h3>
                 <span>5 Stars</span>
               </div>
-              <div class="testimonial">
+              <div class="testimonial" role="group" aria-label="Azura">
                 <img src="./img/customers/customer2.png" alt="Azura" />
                 <p>
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
@@ -390,7 +435,7 @@
               <!-- Additional testimonials can be added here -->
             </div>
             <!-- Navigation Dots -->
-            <div class="carousel-dots" id="dots">
+            <div class="carousel-dots" id="dots" data-carousel-dots>
               <!-- Dots will be generated by JavaScript -->
             </div>
           </div>
@@ -399,7 +444,11 @@
     </section>
 
     <!-- Membership Section -->
-    <section class="membership">
+    <section
+      id="membership"
+      class="membership"
+      aria-labelledby="membership-title"
+    >
       <div class="container">
         <div class="membership-bg">
           <img
@@ -407,15 +456,19 @@
             alt="Membership Background"
           />
           <div class="membership-content">
-            <h2>Join our member and get discount up to 50%</h2>
+            <h2 id="membership-title">
+              Join our member and get discount up to 50%
+            </h2>
             <a href="#" class="sign-up"> Sign Up </a>
           </div>
         </div>
       </div>
     </section>
 
+    </main>
+
     <!-- Footer Section -->
-    <footer>
+    <footer id="contact" aria-labelledby="contact-title">
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">
@@ -425,7 +478,9 @@
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="social-icon"
+                aria-label="Visit Fresh Bite on Instagram"
               >
                 <!-- instagram -->
                 <svg
@@ -446,7 +501,9 @@
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="social-icon"
+                aria-label="Visit Fresh Bite on Facebook"
               >
                 <!-- facebook -->
                 <svg
@@ -462,7 +519,13 @@
                   />
                 </svg>
               </a>
-              <a href="https://x.com/" target="_blank" class="social-icon">
+              <a
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="Visit Fresh Bite on X"
+              >
                 <!-- twitter or X -->
                 <?xml version="1.0" ?><svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -491,17 +554,26 @@
               <h3>Company</h3>
               <ul>
                 <li>
-                  <a href="https://github.com/Muxammedali" target="_blank"
+                  <a
+                    href="https://github.com/Muxammedali"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >About Us</a
                   >
                 </li>
                 <li>
-                  <a href="https://github.com/Muxammedali" target="_blank"
+                  <a
+                    href="https://github.com/Muxammedali"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >Career</a
                   >
                 </li>
                 <li>
-                  <a href="https://github.com/Muxammedali" target="_blank"
+                  <a
+                    href="https://github.com/Muxammedali"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >How It Work</a
                   >
                 </li>
@@ -511,24 +583,33 @@
               <h3>Policy</h3>
               <ul>
                 <li>
-                  <a href="https://github.com/Muxammedali" target="_blank"
+                  <a
+                    href="https://github.com/Muxammedali"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >FAQ</a
                   >
                 </li>
                 <li>
-                  <a href="https://github.com/Muxammedali" target="_blank"
+                  <a
+                    href="https://github.com/Muxammedali"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >Privacy</a
                   >
                 </li>
                 <li>
-                  <a href="https://github.com/Muxammedali" target="_blank"
+                  <a
+                    href="https://github.com/Muxammedali"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >Shipping</a
                   >
                 </li>
               </ul>
             </div>
             <div class="contact">
-              <h3>Get In Touch</h3>
+              <h3 id="contact-title">Get In Touch</h3>
               <ul>
                 <li><a href="tel:+911234567890">+91 123 4567 8900</a></li>
                 <li><a href="mailto:food@example.com">food@example.com</a></li>
