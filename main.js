@@ -219,4 +219,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-// Muxammedali 2025 y
+// Muxammedali 2025 year
