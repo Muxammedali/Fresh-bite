@@ -1,6 +1,6 @@
 // =========================================
 // For customers (testimonial) start code
-
+// Muxammedali
 document.addEventListener("DOMContentLoaded", () => {
   const carousel = document.querySelector("[data-carousel]");
   const dotsContainer = document.querySelector("[data-carousel-dots]");
