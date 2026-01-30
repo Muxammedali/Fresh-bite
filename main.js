@@ -1,6 +1,6 @@
 // =========================================
 // For customers (testimonial) start code
-// Muxammedali 2025
+// Muxammedali 2025 year
 document.addEventListener("DOMContentLoaded", () => {
   const carousel = document.querySelector("[data-carousel]");
   const dotsContainer = document.querySelector("[data-carousel-dots]");
